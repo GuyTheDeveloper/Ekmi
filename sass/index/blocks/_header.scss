@@ -79,6 +79,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top;
+        transition: all 320ms linear;
 
         &:nth-child(2) {
             background-image: url('../../../img/kreslo.png');
@@ -109,13 +110,9 @@
         }
     }
 
-    &__links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
+    &__items:hover &__heading {
+        color: #ff9619;
     }
-
 
     &__heading {
         margin: 0;
