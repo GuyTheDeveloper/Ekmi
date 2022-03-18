@@ -1,0 +1,117 @@
+.hero {
+    padding-bottom: 184px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 52px;
+        color: $main-black;
+        text-transform: uppercase;
+    }
+
+    &__heading2 {
+        margin: 0;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: $main-black;
+    }
+
+    &__text {
+        max-width: 371px;
+        margin: 0;
+        margin-bottom: 25px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 150%;
+        color: $main-black;
+    }
+
+    &__span {
+        margin-bottom: 30px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        color: #ff9619;
+        text-transform: uppercase;
+    }
+
+    &__btn {
+        @include btn;
+        padding: 12px 40px;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 27px;
+        color: #ffffff;
+        text-transform: uppercase;
+        background-color: #ff9619;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .hero {
+        padding-bottom: 157px;
+
+        &__container {
+            flex-direction: column-reverse;
+            padding-right: 17px;
+            padding-left: 18px;
+        }
+
+        &__img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        &__heading {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .hero__heading2 {
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &__text {
+            margin-bottom: 15px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        &__span {
+            margin-bottom: 30px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+        }
+
+        &__btn {
+            margin: 0 auto;
+        }
+    }
+}

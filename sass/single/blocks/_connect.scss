@@ -1,0 +1,231 @@
+.connect {
+    margin-top: 161px;
+    background-color: #a9c2be;
+
+    &__container {
+        display: flex;
+        flex-direction: row-reverse;
+        background-image: url('../../../img/form-img.png');
+        background-size: 670px 510px;
+        background-position: left;
+        background-repeat: no-repeat;
+        padding-top: 31px;
+        padding-bottom: 29px;
+    }
+
+    &__inner {
+        position: relative;
+        left: -120px;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        max-width: 470px;
+        max-height: 450px;
+        width: 100%;
+        background-color: #ffffff;
+
+        padding: {
+            top: 31px;
+            right: 50px;
+            left: 50px;
+            bottom: 17px;
+        }
+    }
+
+    &__inner::before {
+        content: '';
+        position: absolute;
+        left: -73px;
+        top: -14px;
+        display: inline-block;
+        width: 118px;
+        height: 131px;
+
+        background: {
+            image: url(../../../img/zero.png);
+            size: auto;
+            repeat: no-repeat;
+
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 20px;
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 29px;
+        color: $main-black;
+        text-transform: none;
+    }
+
+    &__inner__heading {
+        margin: 0;
+        margin-bottom: 15px;
+        order: -1;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FF9619;
+    }
+
+    &__name {
+        margin-bottom: 25px;
+        @include form;
+    }
+
+    &__phone {
+        margin-bottom: 25px;
+        @include form;
+    }
+
+    &__location {
+        margin-bottom: 25px;
+        @include form;
+    }
+
+    &__opinion {
+        margin-bottom: 25px;
+        @include form;
+    }
+
+    &__click {
+        display: flex;
+        align-items: center;
+        margin-bottom: 29px;
+    }
+
+    &__checkbox#checkbox {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        border: 1px solid #d1d1d1;
+
+        &:checked {
+            appearance: auto;
+        }
+    }
+
+    &__verify {
+        max-width: 219px;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #343434;
+        opacity: 0.5;
+    }
+
+    &__btn {
+        align-self: center;
+        @include btn;
+        padding: 8px 20px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        text-transform: uppercase;
+        background-color: #ff9619;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .connect {
+        margin-top: 90px;
+
+        &__container {
+            padding: 57px 18px;
+            background-image: none;
+        }
+
+        &__inner {
+            position: static;
+
+            padding: {
+                top: 22px;
+                right: 36px;
+                left: 35px;
+                bottom: 17px;
+            }
+
+            &::before {
+                display: none;
+            }
+
+            &__heading {
+                margin-bottom: 11px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;
+            }
+        }
+
+        &__heading {
+            margin-bottom: 18px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+        }
+
+        &__name {
+            margin-bottom: 21px;
+            padding-bottom: 0;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            opacity: 0.5;
+        }
+
+        &__phone {
+            margin-bottom: 22px;
+            padding-bottom: 0;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        &__location {
+            margin-bottom: 22px;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        &__opinion {
+            margin-bottom: 18px;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        &__checkbox#checkbox[type="checkbox"] {
+            width: 14.5px;
+            height: 14.5px;
+            margin-right: 7px;
+        }
+
+        &__verify {
+            max-width: 247px;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+        }
+
+        &__btn {
+            max-width: 180px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}

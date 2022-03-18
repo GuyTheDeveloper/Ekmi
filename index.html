@@ -5,9 +5,380 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Sass template</title>
+    <title>Ekmi </title>
 </head>
 <body>
-    <h1 class="visually-hidden">Hello World!</h1>
+    <header class="header">
+        <div class="header__desktop">
+            <div class="container header__container">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link" href="#">Каталог</a>
+                    </li>
+                    
+                    <li class="header__item">
+                        <a class="header__link" href="#">Индивидуальная мебель</a>
+                    </li>
+                    
+                    <li class="header__item">
+                        <a class="header__link" href="#">Контакты</a>
+                    </li>
+                    
+                    <li class="header__item header__item375">
+                        <a class="header__link" href="index.html">
+                            <img class="header__logo" src="./img/logo.svg" width="216" height="66" alt="Ekmi official logo">
+                        </a>
+                    </li>
+                    
+                    <li class="header__item">
+                        <a class="header__link" href="#">О компании</a>
+                    </li>
+                    
+                    <li class="header__item header__item375">
+                        <a class="header__link header__tel" href="tel:+380996384537">+38 (099)-638-45-37</a>
+                    </li>
+                    
+                    <li class="header__item header__item375">
+                        <select class="header__lang">
+                            <option class="header__option" value="Ru">RU</option>
+                            <option class="header__option" value="Eng">ENG</option>
+                        </select>
+                    </li>
+                    
+                </ul>
+                <button class="header__close">
+                </button>
+            </div>
+            
+            <div class="container">
+                <nav class="header__nav">
+                    <div class="header__lists">
+                        <a href="single.html" class="header__items">
+                            <h3 class="header__heading">Диваны</h3>
+                        </a>
+                        <a class="header__items" href="single.html">
+                            <h3 class="header__heading">Стулья</h3>
+                        </a>
+                        <a class="header__items" href="single.html">
+                            <h3 class="header__heading">Кресла</h3>
+                        </a>
+                        <a class="header__items" href="single.html">
+                            <h3 class="header__heading">Кровати</h3>
+                        </a>
+                        <a class="header__items" href="single.html">
+                            <h3 class="header__heading">Матрацы</h3>
+                        </a>
+                        <a class="header__items" href="single.html">
+                            <h3 class="header__heading">пуфы</h3>
+                        </a>
+                        <a class="header__items" href="single.html">
+                            <h3 class="header__heading">Эксклюзивная мебель</h3>
+                        </a>
+                        
+                        <a class="header__items header__items--hidden" href="single.html">
+                            <h3 class="header__heading">2D-3D модели</h3>
+                        </a>
+                        
+                        <a class="header__items header__items--hidden" href="single.html">
+                            <h3 class="header__heading">Шоу-рум</h3>
+                        </a>
+                        
+                        <a class="header__items header__items--hidden" href="single.html">
+                            <h3 class="header__heading">Дилерам</h3>
+                        </a>
+                        
+                        <a class="header__items header__items--hidden" href="single.html">
+                            <h3 class="header__heading">Каталог</h3>
+                        </a>
+                    </div>
+                </nav>
+                <div class="header__bottom">
+                    <select class="header__bottom__select header__lang">
+                        <option value="">Все 2D-3D модели</option>
+                        <option value="">Все 3D-4D модели</option>
+                    </select>
+                    <div class="header__bottom-wrapper">
+                        <div class="header__button-wrapper">
+                            <button class="header__button header__button1"></button>
+                            <button class="header__button header__button2"></button>
+                        </div>
+                        <form class="header__form" action="https://echo.htmlacademy.ru" method="POST">
+                            <input class="header__input" type="text" placeholder="Поиск" name="User искал это" required>
+                            <button class="header__magnifier"></button>
+                        </form>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header__mobile">
+            <div class="container header__mobile__container">
+                <div class="header__top">
+                    <a href="index.html">
+                        <img src="./img/logo.svg" width="111" height="34" alt="Our official logo> Ekmi">
+                    </a>
+                    <div class="header__top__inner">
+                        <select class="header__lang">
+                            <option value="ru">RU</option>
+                            <option value="en">Eng</option>
+                        </select>
+                        <a class="header__tel" href="tel:+380996384537">
+                            <img src="./img/phone.svg" width="21" height="21" alt="Call us know">
+                        </a>
+                        <button class="header__hamburger">
+                            <img src="./img/hamburger.svg" width="25" height="25" alt="Hmaburger menu">
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="header-wrapper375">
+                    <select class=" header__lang">
+                        <option value="Все 2D-3D модели">Все 2D-3D модели</option>
+                        <option value="Все 2D-3D модели">Все 3D-4D модели</option>
+                    </select>
+                    
+                    <div class="header__inner-wrapper">
+                        <button class="header__button header__button1"></button>
+                        <button class="header__button header__button2"></button>
+                    </div>
+                </div>
+                
+                <form class="header__form" action="https://echo.htmlacademy.ru">
+                    <input type="text" class="header__input" placeholder="Поиск" name="Пользователь ввел это" required>
+                    <button class="header__magnifier"></button>
+                </form>
+            </div> <!-- Header__mobile ends -->
+            
+            
+        </div>
+    </header>
+    
+    <main class="main">
+        <section class="products">
+            <div class="container products__container">
+                <div class="products__list">
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Martin</h3>
+                            <p class="products__text">Мягкое кресло «Альба» компании «Экми -мебель»- это украшение и удобное дополнение Вашего интерьера. Кресло «Альба» оптимальная личная зона для отдыха.</p>
+                        </div>
+                        <img class="products__img" src="./img/martin.png" width="267" height="106" alt="Martin our best products">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Alba</h3>
+                            <p class="products__text">Мягкое кресло «Альба» компании «Экми -мебель»- это украшение и удобное дополнение Вашего интерьера. Кресло «Альба» оптимальная личная зона для отдыха.</p>
+                        </div>
+                        <img class="products__img" src="./img/alba.png" width="270" height="245" alt="Alba from our best products">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Toscana</h3>
+                            <p class="products__text">Кресло «Тоскана» компании «EKMI-мебель». Располагает для удобного времяпровождения.</p>
+                        </div>
+                        <img class="products__img products__img3" src="./img/toscana.png" width="270" height="227" alt="Toscana products with lower price only with us">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Leonardo</h3>
+                            <p class="products__text">Мягкое кресло «Альба» компании «Экми -мебель»- это украшение и удобное дополнение Вашего интерьера. Кресло «Альба» оптимальная личная зона для отдыха.</p>
+                        </div>
+                        <img class="products__img" src="./img/leonardo.png" width="267" height="176" alt="Leonardo our the most expensive product">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Boorbon</h3>
+                            <p class="products__text">Кресло «Тоскана» компании «EKMI-мебель». Располагает для удобного времяпровождения.</p>
+                        </div>
+                        <img class="products__img" src="./img/boorbon.png" width="270" height="206" alt="Boorbon our product , we can lower a price">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Emilio</h3>
+                            <p class="products__text">Легкий, воздушный, невесомый… Диван «Арни», непроизвольно вызывающий ассоциацию с облаком,  буквально излучает уют. Объёмные  модули легко комбинируются между собой, создавая любимое место отдыха для всей семьи. Композиция может быть дополнена креслами и пуфами.</p>
+                        </div>
+                        <img class="products__img" src="./img/emilio.png" width="259" height="170" alt="Emilio, you think it's a name, but its our product with best choices">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Nensi</h3>
+                            <p class="products__text">Мягкие формы кровати «Ненси» создадут уют и комфорт в Вашей спальне.</p>
+                        </div>
+                        <img class="products__img" src="./img/nensi.png" width="252" height="166" alt="Nensi, if you'll buy it, you made the best decision">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Tatami</h3>
+                            <p class="products__text">Легкий, воздушный, невесомый… Диван «Арни», непроизвольно вызывающий ассоциацию с облаком,  буквально излучает уют. Объёмные  модули легко комбинируются между собой, создавая любимое место отдыха для всей семьи. Композиция может быть дополнена креслами и пуфами.</p>
+                        </div>
+                        <img class="products__img" src="./img/tatami.png" width="259" height="170" alt="Tatami, i know u smiling, but its our product too, we have the best fantasy">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Regina</h3>
+                            <p class="products__text">Легкий, воздушный, невесомый… Диван «Арни», непроизвольно вызывающий ассоциацию с облаком,  буквально излучает уют. Объёмные  модули легко комбинируются между собой, создавая любимое место отдыха для всей семьи. Композиция может быть дополнена креслами и пуфами.</p>
+                        </div>
+                        <img class="products__img" src="./img/regina.png" width="267" height="176" alt="Regina , we lowered price to 50%, buy it know">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Malta</h3>
+                            <p class="products__text">Двусторонний матрац МАЛЬТА без пружин – удачное сочетание жестокости и комфортности. Самый низкий матрац в нашей линейке..</p>
+                        </div>
+                        <img class="products__img products__img10" src="./img/malta.png" width="270" height="209" alt="Malta, the best product we ever have made">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Versal</h3>
+                            <p class="products__text">Мягкие формы кровати «Ненси» создадут уют и комфорт в Вашей спальне.</p>
+                        </div>
+                        <img class="products__img" src="./img/versal.png" width="267" height="196" alt="Versal, our products limitless">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Exclusive 1</h3>
+                            <p class="products__text">Мягкое кресло «Альба» компании «Экми -мебель»- это украшение и удобное дополнение Вашего интерьера. Кресло «Альба» оптимальная личная зона для отдыха.</p>
+                        </div>
+                        <img class="products__img" src="./img/korolevskiy.png" width="253" height="166" alt="Exclusive , the best but the most expensive">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Floret</h3>
+                            <p class="products__text">Легкий, воздушный, невесомый… Диван «Арни», непроизвольно вызывающий ассоциацию с облаком,  буквально излучает уют. Объёмные  модули легко комбинируются между собой, создавая любимое место отдыха для всей семьи. Композиция может быть дополнена креслами и пуфами.</p>
+                        </div>
+                        <img class="products__img" src="./img/floret.png" width="270" height="184" alt="Floret, products, soft, cheap">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Exclusive bed 2</h3>
+                            <p class="products__text">Эксклюзивная мебель</p>
+                        </div>
+                        <img class="products__img" src="./img/exclusive.png" width="256" height="168" alt="Exclusive second products">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Arni</h3>
+                            <p class="products__text">Легкий, воздушный, невесомый… Диван «Арни», непроизвольно вызывающий ассоциацию с облаком,  буквально излучает уют. Объёмные  модули легко комбинируются между собой, создавая любимое место отдыха для всей семьи. Композиция может быть дополнена креслами и пуфами.</p>
+                        </div>
+                        <img class="products__img" src="./img/arni.png" width="257" height="170" alt="Arni soft , cheapest">
+                    </a>
+                    
+                    <a class="products__item" href="single.html">
+                        <div class="products__item-wrapper">
+                            <h3 class="products__heading">Taiti</h3>
+                            <p class="products__text">Эксклюзивный матрац с ортопедическим эффектом без пружин. Самая жесткая, но при этом очень комфортная модель во всей линейке. Идеальный вариант для крупных людей.</p>
+                        </div>
+                        <img class="products__img" src="./img/taiti.png" width="267" height="194" alt="Taiti, the best names we have ever thinked">
+                    </a>
+                </div>
+                
+                <div class="products-wrapper">
+                    <button class="products__btn products__arrow"></button>
+                    <button class="products__btn products__btn375"><span class="products__span">1</span></button>
+                    <button class="products__btn products__btn--active"><span class="products__span">2</span></button>
+                    <button class="products__btn"><span class="products__span">3</span></button>
+                    <button class="products__btn products__arrow"></button>
+                </div>
+                <a class="products__link" href="#">смотреть все</a>
+            </div>
+        </section>
+        
+        <section class="connect">
+            <div class="container connect__container">
+                <div class="connect__inner">
+                    <h2 class="connect__heading">остались вопросы?</h2>
+                    <h3 class="connect__inner__heading">Заполните форму</h3>
+                    
+                    <form  class="connect__form" action="https://echo.htmlacademy.ru">
+                        <label for="name"></label>
+                        <input class="connect__name" id="name" type="text" name="Entered username is" placeholder="Ваше имя*" minlength="3" required>
+                        
+                        <label for="tnumber"></label>
+                        <input class="connect__phone" id="tnumber" type="tel" name="Entered phone number is" placeholder="Ваш номер телефона*" minlength="12" required>
+                        
+                        <label for="ip"></label>
+                        <input class="connect__location" type="text"  id="ip" name="Entered country, process to find IP:address" placeholder="Страна" minlength="3" required>
+                        
+                        <label for="opinion"></label>
+                        <input class="connect__location" type="text" id="opinion" name="User entered a text" placeholder="Комментарий">
+                        
+                        <label class="connect__click">
+                            <input class="connect__checkbox" id="checkbox" type="checkbox" name="Privacy Policy has accepted" required>
+                            <span class="connect__verify">Подтверждая заказ, я принимаю условия пользовательского соглашения</span>
+                        </label>
+                        
+                        <button class="connect__btn">запросить звонок</button>
+                    </form>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    
+    
+    
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__main">
+                <ul class="footer__list">
+                    <li class="footer__item footer__item-logo">
+                        <a href="#">
+                            <img class="footer__logo" src="./img/logof.svg" width="178" height="64" alt="">
+                        </a>
+                    </li>
+                    <div class="footer__item--together">
+                        <li class="footer__item footer__item-nav">
+                            <a class="footer__link" href="#">Каталог</a>
+                            <a class="footer__link" href="#">о компании</a>
+                            <a class="footer__link" href="#">Индивидуальная мебель</a>
+                            <a class="footer__link" href="#">Партнерам дизайнерам</a>
+                        </li>
+                        <li class="footer__item footer__item-nav">
+                            <a class="footer__link" href="#">2D, 3D модели</a>
+                            <a class="footer__link" href="#">Шоу-румы</a>
+                            <a class="footer__link" href="#">Дилерам</a>
+                            <a class="footer__link" href="#">Контакты</a>
+                            <a class="footer__link" href="#">Конфигуратор</a>
+                        </li>
+                    </div>
+                    <div class="footer__wrapper">
+                        <li class="footer__item footer__right">
+                            <div class="footer__inner">
+                                <a class="footer__ins" href="#">
+                                    <img src="./img/ins.svg" width="28" height="28" alt="instagram our best choice , follow us to know more">
+                                </a>
+                                <a href="#">
+                                    <img class="footer__fb" src="./img/fb.svg" width="28" height="28" alt="Facebook, we have some relationship too">
+                                </a>
+                            </div>
+                            <a class="footer__tel" href="tel:380996384537">+38 (099)-638-45-37</a>
+                        </li>
+                        <li class="footer__item">
+                            <button class="footer__btn">Персональная консультация</button>
+                        </li>
+                    </div>
+                </ul>
+                <p class="footer__text">© 1993–2021 Интернет-магазин «EKMI™» — меблі</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/main.js"></script>
 </body>
 </html>

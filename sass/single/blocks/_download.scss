@@ -1,0 +1,103 @@
+.download {
+    margin-top: 199px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__btn {
+        @include btn;
+        padding-block: 45px;
+        padding-left: 52px;
+        padding-right: 52px;
+        border: 1px solid #ff9619;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 35px;
+        color: $main-black;
+
+        &:nth-child(2) {
+            max-width: 428px;
+            width: 100%;
+            padding-right: 90px;
+            padding-left: 90px;
+
+            border: {
+                right: none;
+                left: none;
+            }
+        }
+
+        &:nth-child(3) {
+            max-width: 356px;
+            width: 100%;
+            padding-left: 80px;
+        }
+    }
+
+    &__pdf {
+        max-width: 384px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-right: 80px;
+    }
+
+    &__pdf::after {
+        content: '';
+        width: 32px;
+        height: 33px;
+        display: inline-block;
+        margin-left: 25px;
+        background-color: #ff9619;
+        border-radius: 50%;
+
+        background: {
+            image: url('../../../img/arrow-single.svg');
+            size: auto;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .download {
+        margin-top: 112px;
+
+        &__btn {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+
+            &:nth-child(2) {
+                max-width: 167.5px;
+                width: 100%;
+                padding: 15px 10px;
+                border-right: 1px solid #ff9619;
+            }
+
+            &:nth-child(3) {
+                max-width: none;
+                width: auto;
+                padding: 13px 24px;
+                border-top: none;
+            }
+        }
+
+        &__pdf {
+            max-width: 167.5px;
+            width: 100%;
+            padding: 15px 10px;
+
+
+            &::after {
+                width: 18px;
+                height: 18px;
+                margin-left: 4px;
+                background-size: 6px;
+            }
+        }
+
+    }
+}

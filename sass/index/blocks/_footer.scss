@@ -1,0 +1,231 @@
+.footer {
+    margin-top: 160px;
+    background-color: #5b5b5b;
+    position: relative;
+
+    &__main {
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 364px;
+            height: 96px;
+            right: 0px;
+            top: -174px;
+            display: inline-block;
+            position: absolute;
+
+            background: {
+                image: url(../../../img/ekmi.png);
+                repeat: no-repeat;
+                size: auto;
+                position: right 10px center;
+            }
+        }
+    }
+
+    &__container {
+        padding-top: 80px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 79px;
+    }
+
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__item--together {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    &__item-nav {
+        max-width: 133px;
+
+        &:last-child {
+            max-width: 120px;
+        }
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.16em;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__ins {
+        margin-right: 14px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__tel {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__btn {
+        @include btn;
+
+        padding: {
+            top: 7px;
+            bottom: 8px;
+            right: 40px;
+            left: 11px;
+        }
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: #ff9619;
+
+        background: {
+            image: url('../../../img/arrowfooter.svg');
+            size: auto;
+            repeat: no-repeat;
+            position: right 8px center;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        padding-bottom: 29px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.16em;
+        text-align: center;
+        text-transform: capitalize;
+        color: #ffffff;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .footer {
+        margin-top: 148px;
+
+        &__container {
+            padding-top: 63px;
+            padding-right: 37px;
+            padding-left: 36px;
+        }
+
+        &__list {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+
+        &__item--together {
+            max-width: 302px;
+            width: 100%;
+            justify-content: space-between;
+            order: -1;
+            margin-bottom: 77px;
+        }
+
+        &__main::before {
+            content: '';
+            width: 223px;
+            height: 60px;
+            top: -122px;
+            right: 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &__link {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: 0.16em;
+            text-transform: capitalize;
+        }
+
+        &__btn {
+            max-width: 271px;
+            width: 100%;
+            margin-bottom: 51px;
+            gap: 0;
+        }
+
+        &__wrapper {
+            flex-direction: column-reverse;
+            gap: 0;
+            margin: 0 auto 58px;
+        }
+
+        &__logo {
+            width: 148px;
+            height: 47px;
+        }
+
+        &__item-logo {
+            order: 1;
+            margin: 0 auto 34px;
+        }
+
+        &__right {
+            max-width: none;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__text {
+            min-width: 326px;
+            margin: 0 auto;
+            padding: 0;
+            padding-bottom: 27px;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 15px;
+            text-align: center;
+            letter-spacing: 0.16em;
+            color: #FFFFFF;
+            transform: translateX(-13px);
+        }
+    }
+}

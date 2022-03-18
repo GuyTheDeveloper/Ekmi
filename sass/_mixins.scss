@@ -1,0 +1,32 @@
+@mixin btn() {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@mixin form() {
+    padding-bottom: 5px;
+
+    border: {
+        right: none;
+        top: none;
+        left: none;
+    }
+
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #343434;
+    opacity: 0.5;
+}
+
+@mixin info() {
+    padding-top: 29px;
+    padding-bottom: 28px;
+    border-left: 1px solid rgba(52, 52, 52, 0.2);
+    border-right: 1px solid rgba(52, 52, 52, 0.2);
+    border-bottom: 1px solid rgba(52, 52, 52, 0.2);
+}
